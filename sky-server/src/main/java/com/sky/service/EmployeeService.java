@@ -24,4 +24,9 @@ public interface EmployeeService {
     * Pagination query
     * */
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /*
+    * Start or Stop Employee Account
+    * */
+    void startOrStop(Integer status, Long id);
 }
