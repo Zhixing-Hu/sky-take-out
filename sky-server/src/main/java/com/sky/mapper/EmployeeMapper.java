@@ -31,4 +31,10 @@ public interface EmployeeMapper {
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
 
     void update(Employee employee);
+
+    /*
+    * Get employee data from id
+    * */
+    @Select("select * from employee where id = #{id}")
+    Employee getById(Long id);
 }

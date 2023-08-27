@@ -29,4 +29,14 @@ public interface EmployeeService {
     * Start or Stop Employee Account
     * */
     void startOrStop(Integer status, Long id);
+
+    /*
+    * Get employee data by id
+    * */
+    Employee getById(Long id);
+
+    /*
+    * Edit Employee Data
+    * */
+    void update(EmployeeDTO employeeDTO);
 }
